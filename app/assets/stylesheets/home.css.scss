@@ -1,3 +1,126 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logo {
+	width: 484px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 66px;
+}
+
+.namer {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.5em;
+	color: #c84631;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 14px;
+}
+
+hr.spacer {
+	height: 76px;
+	display: block;
+	border: 0 none;
+
+}
+
+.btn{
+	width: 380px;
+	height: 94px;
+	vertical-align: middle;
+	background: #a7a9ac;
+	border: 1px solid #d1d2d4;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 34px;
+}
+.btn a {
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: lighter;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	text-decoration: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+	display: block;
+	letter-spacing:4px;
+}
+
+.btn a:hover {
+	background: #979899;
+}
+
+.signup_logo {
+	width: 361px;
+	display: block;
+	margin: 0 auto;
+}
+
+hr.linner {
+	height: 1px;
+	background: #000;
+	border-top: 1px solid #c7c8cc;
+	border-bottom: 1px solid #c7c8cc;
+}
+h2 {
+	color: #c12421;
+	text-transform: uppercase;
+}
+
+.center_stuff {
+	width: 579px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+input {
+	width: 517px;
+	border: 1px solid #000;
+	font-family:'Conv_NeutraText-Light';
+	font-size: 1.5em;
+	color: #000;
+	padding: 30px;
+	text-transform: uppercase;
+	margin-bottom: 11px;
+}
+input.remember_me {
+	width: 14px;
+}
+
+
+.sign_btn{
+	width: 245px;
+	height: 94px;
+	vertical-align: middle;
+	background: #c12421;
+	border: 1px solid #d1d2d4;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: lighter;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+	display: block;
+	letter-spacing:4px;
+}
+.sign_btn:hover {
+	background: #9c201d;
+}
+
+.bottom_links a{
+	color: #c12421;
+	text-decoration: none;
+}
+.bottom_links a:hover{
+	color: #c12421;
+	text-decoration: underline;
+}

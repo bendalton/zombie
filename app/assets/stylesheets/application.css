@@ -5,3 +5,11 @@
  *= require_self
  *= require_tree . 
 */
+@font-face {
+	font-family: 'Conv_NeutraText-Light';
+	src: url('fonts/NeutraText-Light.eot');
+	src: local('☺'), url('fonts/NeutraText-Light.woff') format('woff'), url('fonts/NeutraText-Light.ttf') format('truetype'), url('fonts/NeutraText-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {width:640px; margin: 0 auto; font-family:'Conv_NeutraText-Light';}

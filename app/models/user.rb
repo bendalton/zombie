@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
   # Add :confirmable?
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :firstname, :lastname, :phone
 end

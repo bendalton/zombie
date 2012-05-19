@@ -1,0 +1,16 @@
+	<%= render :partial => "devise/shared/header" %>
+	<h2>Sign-in</h2>
+
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+	  <div><%= f.email_field :email, :placeholder => "email" %></div>
+
+	  <div><%= f.password_field :password, :placeholder => "password" %></div>
+
+	  <div><%= f.submit "Lets Play", :class=>"sign_btn" %></div>
+	  <% if devise_mapping.rememberable? -%>
+	    <div><%= f.check_box :remember_me, :class=>"remember_me" %> <%= f.label :remember_me %></div>
+	  <% end -%>
+	<% end %>
+
+	<%= render :partial => "devise/shared/links" %>
+</div>
