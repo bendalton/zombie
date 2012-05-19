@@ -4,6 +4,13 @@
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
+  <% if @user.pic_updated_at.nil? %>
+    <div><%= f.file_field :pic %></div>
+  <% else %>
+  <div class="pic_layer_edit">
+  </div>
+    <%= image_tag @user.pic.url, :class=>"profile_pic" %>
+  <% end %>
   <div><%= f.text_field :firstname %></div>
   <div><%= f.text_field :lastname %></div>
   <div><%= f.text_field :phone %></div>
@@ -20,8 +27,9 @@
 
   <div><%= f.submit "Update", :class=>"sign_btn" %></div>
 <% end %>
-
+<div class="bottom_links">
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
 
 <%= link_to "Back", :back %>
+</div>
 </div>

@@ -1,6 +1,9 @@
 <%= image_tag("logo.png", :border=>0, :class=>"logo") %>
 
 	<% if user_signed_in? %>
+	<div class="pic_layer">
+  	</div>
+    <%= image_tag current_user.pic.url, :class=>"profile_pic" %>
 	<div class="namer">
 		<%= current_user.firstname %> <%= current_user.lastname %>
 	</div>
