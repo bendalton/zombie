@@ -6,6 +6,9 @@
 	</div>
 	<hr class="spacer">
 <div class="btn">
+        <%= link_to 'Edit', edit_user_registration_path %>
+</div>
+<div class="btn">
         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
     <% else %>
     <hr class="spacer">
