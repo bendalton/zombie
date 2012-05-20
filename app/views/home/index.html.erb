@@ -3,10 +3,14 @@
 	<% if user_signed_in? %>
 	<div class="pic_layer">
   	</div>
+
     <%= image_tag current_user.pic.url, :class=>"profile_pic" %>
+    <script language="JavaScript">document.write(geoip_city());</script>
 	<div class="namer">
 		<%= current_user.firstname %> <%= current_user.lastname %>
 	</div>
+	<%= current_user.address %>
+	
 	<hr class="spacer">
 <div class="btn">
         <%= link_to 'Edit', edit_user_registration_path %>

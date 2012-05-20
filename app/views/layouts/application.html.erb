@@ -7,6 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<form>
+Latitude: <input type="text" name="Latitude" /> <br />
+Longitude: <input type="text" name="Longitude" />
+</form>
+
+<button onclick="getLocation()">Get Location</button><input type="submit" value="Submit" />
+
+<p id="demo">Click the button to get your coordinates:</p>
+<p id="demo2">Click the button to get your coordinates:</p>
+
+<script>
+var x=document.getElementById("demo");
+var y=document.getElementById("demo2");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+function showPosition(position)
+  {
+  x.innerHTML=position.coords.latitude;  
+  y.innerHTML=position.coords.longitude;    
+  }
+</script>
+
 <!--Devise Alert-->
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
